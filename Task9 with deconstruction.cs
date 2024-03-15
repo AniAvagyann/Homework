@@ -26,7 +26,7 @@ public class Program
 
         } while (d < 0);
 
-        QuadraticEquation equation = new QuadraticEquation(a, b, c, d);
+        QuadraticEquation equation = new QuadraticEquation(a, b, d);
 
         if (!equation.IsValid)
         {
@@ -46,7 +46,7 @@ public class QuadraticEquation
     public double x2 { get; private set; }
     public bool IsValid { get; private set; }
 
-    public QuadraticEquation(double a, double b, double c, double d)
+    public QuadraticEquation(double a, double b, double d)
     {
         if (a == 0)
         {
